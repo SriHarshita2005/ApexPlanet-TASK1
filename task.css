@@ -1,0 +1,63 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 40px;
+  }
+  
+  /* Container */
+  .container {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    color: #34495e;
+  }
+  
+  /* Paragraphs */
+  p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a4a4a;
+  }
+  
+  /* Lists */
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  /* Emphasis styling */
+  em {
+    color: #2e86de;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
