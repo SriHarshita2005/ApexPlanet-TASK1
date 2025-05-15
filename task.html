@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script>
+        function toggleInfo(beverage) {
+          // Determine the correct info section based on the beverage clicked
+          var info = document.getElementById(beverage + '-info');
+          var button = document.querySelector('#' + beverage + ' button');
+    
+          // Toggle visibility of the info section
+          if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block';
+            button.textContent = 'Hide Info';
+          } else {
+            info.style.display = 'none';
+            button.textContent = 'Show More Info';
+          }
+        }
+      </script>
+
+
+<h1>Beverages</h1>
+    <p>There are 2 best beverages that are most common in India.</p>
+
+
+<div id="tea">
+    <h2>Tea</h2>
+    <p>Tea is made by steeping dried leaves of the Camellia sinensis plant in hot water. It comes in many varieties such as black, green, oolong, and herbal blends. Below is an image:</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ18_gKtRDej0M3W9Xvqtst2POxMiIhnn-eQ&s" alt="Tea Image" />
+    
+    <button onclick="toggleInfo('tea')">Show More Info</button>
+    <div id="tea-info" class="info">
+        <p>Tea is often served with milk or sugar in many cultures, especially in India, where it is an integral part of daily life. The culture of drinking tea in India dates back centuries, and it has become a symbol of hospitality and bonding.</p>  
+    </div>
+  </div>
+
+  <div id="coffee">
+    <h2>Coffee</h2>
+    <p>Coffee is made from roasted beans of the Coffea plant. It comes in various forms, including espresso, cappuccino, and cold brew. Below is an image:</p>
+    <img src="data:image/webp;base64,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" alt="Coffee Image" />
+    
+    <button onclick="toggleInfo('coffee')">Show More Info</button>
+    <div id="coffee-info" class="info">
+        <p>Coffee is one of the most popular beverages in the world. It is known for its stimulating effects due to caffeine and is often enjoyed as a morning ritual or social beverage. India is also known for its rich coffee-growing regions like Coorg and Chikmagalur.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  
+
+</body>
+</html>
